@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class DemoReader {
     public static String read() {
-        try (BufferedReader br = new BufferedReader(new FileReader("d://Обучение/courses/JWD_Task02_OOP-master/jwd-task01-template/src/main/resources/task02.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("d://Обучение/courses/JWD_Task2/src/main/resources/task02.xml"))) {
             StringBuilder sb = new StringBuilder();
             String s;
             while ((s = br.readLine()) != null) {

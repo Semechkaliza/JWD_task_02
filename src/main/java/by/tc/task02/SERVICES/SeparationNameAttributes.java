@@ -16,11 +16,9 @@ public class SeparationNameAttributes {
             if (workPart.contains(" ")) {
                 workPart = workPart.substring(workPart.indexOf(' ') + 1);
             }
-            String key = null;
-            String value = null;
-            key = workPart.substring(0, workPart.indexOf('='));
+            String key = workPart.substring(0, workPart.indexOf('='));
             workPart = workPart.substring(workPart.indexOf('"') + 1);
-            value = workPart.substring(0, workPart.indexOf('"'));
+            String value = workPart.substring(0, workPart.indexOf('"'));
             workPart = workPart.substring(workPart.indexOf('"') + 1);
             currentEl.addAttribute(key, value);
         }

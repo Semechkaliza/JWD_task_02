@@ -17,9 +17,7 @@ public class Tag {
     public Tag(String workText) {
         String workPart = FindNextTextPart.findNextTextPart(workText);
         name = SeparationNameAttributes.getElementName(workPart);
-        //  if(FindNextTextPart.checkEmpty(FindNextTextPart.findNextContent(workText))){
         content.add(FindNextTextPart.findNextContent(workText));
-        //  }
         workText = FindNextTextPart.findNextWorkText(workText);
         workText = workText.substring(0, workText.indexOf("</" + name + '>'));
 
@@ -57,7 +55,6 @@ public class Tag {
         for (String value : content)
             System.out.print(value + " ");
 
-        // System.out.print(getName()+" :: ");
         for (String value : attribute.values())
             System.out.print(" " + value);
         System.out.print("\n");
