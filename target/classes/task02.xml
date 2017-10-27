@@ -1,10 +1,10 @@
 <?kdsdj jhfs jkd?>
-<breakfast-menu>
+<breakfast-menu fool="ldsld">
     <food id="1">
         <number>Belgian Waffles</number>
         <price>$5.95</price>
     </food>
-    <food id="2">
+    <food id="2" color="6">
         <number>Strawberry Belgian Waffles</number>
         <price>$7.95</price>
     </food>

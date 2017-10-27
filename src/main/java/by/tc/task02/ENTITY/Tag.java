@@ -1,6 +1,7 @@
 package by.tc.task02.ENTITY;
 
 import by.tc.task02.SERVICES.FindNextTextPart;
+import by.tc.task02.SERVICES.IgnoreText;
 import by.tc.task02.SERVICES.SeparationNameAttributes;
 
 import java.util.HashMap;
@@ -17,7 +18,9 @@ public class Tag {
     public Tag(String workText) {
         String workPart = FindNextTextPart.findNextTextPart(workText);
         name = SeparationNameAttributes.getElementName(workPart);
-        content.add(FindNextTextPart.findNextContent(workText));
+        if(!IgnoreText.getContent(workText).isEmpty()) {
+            content.add(FindNextTextPart.findNextContent(workText));
+        }
         workText = FindNextTextPart.findNextWorkText(workText);
         workText = workText.substring(0, workText.indexOf("</" + name + '>'));
 

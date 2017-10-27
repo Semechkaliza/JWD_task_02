@@ -13,4 +13,14 @@ public class IgnoreText {
         fileText = fileText.substring(0, fileText.indexOf("<!--")).concat(fileText.substring(fileText.indexOf("-->") + 3));
         return fileText;
     }
+    public static String getContent(String work){
+        work=FindNextTextPart.findNextContent(work);
+        boolean k=false;
+        while ((work.contains(" "))&&(work.length()>0)){
+            work=work.substring(work.indexOf(' ')+1);
+
+        }
+        String content=work;
+        return content;
+    }
 }
