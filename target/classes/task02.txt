@@ -1,0 +1,11 @@
+<?kdsdj jhfs jkd?>
+<breakfast-menu>
+    <food id="1">
+        <number>Belgian Waffles</number>
+        <price>$5.95</price>
+    </food>
+    <food id="2">
+        <number>Strawberry Belgian Waffles</number>
+        <price>$7.95</price>
+    </food>
+</breakfast-menu>
